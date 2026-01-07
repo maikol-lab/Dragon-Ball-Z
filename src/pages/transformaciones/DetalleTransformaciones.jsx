@@ -261,37 +261,6 @@ const DetalleTransformaciones = () => {
                     )}
                 </div>
             </div>
-
-            {/* Sección de habilidades si existen */}
-            {datos.abilities && datos.abilities.length > 0 && (
-                <div className="mt-5">
-                    <h5 className="border-bottom pb-2 text-dark dark:text-light">
-                        <b>Habilidades de esta Transformación</b>
-                    </h5>
-                    <div className="row mt-3">
-                        {datos.abilities.map((ability, index) => (
-                            <div className="col-md-6 col-lg-4 mb-3" key={index}>
-                                <div className="card h-100 border-0 shadow-sm">
-                                    <div className="card-body">
-                                        <h6 className="card-title fw-bold text-dark dark:text-light">{ability.name || `Habilidad ${index + 1}`}</h6>
-                                        <p className="card-text small text-dark dark:text-light">
-                                            {ability.description || "Sin descripción disponible."}
-                                        </p>
-                                        {ability.kiCost && (
-                                            <p className="mb-0 text-muted dark:text-gray-400">
-                                                <small>
-                                                    <b>Costo de Ki:</b> {ability.kiCost}
-                                                </small>
-                                            </p>
-                                        )}
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            )}
-
         </div>
     );
 };
