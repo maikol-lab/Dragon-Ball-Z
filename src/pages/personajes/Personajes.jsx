@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import CardPersonajes from "../../components/CardPersonajes";
+import CardPersonajes from "../../components/Card/CardPersonajes";
 
 const API = 'https://dragonball-api.com/api/characters?page=1&limit=100';
 const Personajes = () => {

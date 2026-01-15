@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import CardPlanetas from "../../components/CardPlanetas";
+import CardPlanetas from "../../components/Card/CardPlanetas";
 
 const API = 'https://dragonball-api.com/api/planets?page=1&limit=100';
 

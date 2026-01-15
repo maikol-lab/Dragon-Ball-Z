@@ -16,7 +16,6 @@ import Error404 from './pages/Error404'
 import 'animate.css';
 import WOW from 'wow.js';
 
-
 const App = () => {
   const [darkMode, setDarkMode] = useState(true);
 
@@ -63,7 +62,6 @@ const App = () => {
           <Route path='/planetas' element={<Planetas />} />
           <Route path='/detalleplanetas/:id' element={<DetallePlanetas />} />
           <Route path='/busquedas' element={<Busquedas />} />
-
 
           <Route path='/error404' element={<Error404 />} />
           <Route path='*' element={<Inicio />} />

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import CardTransformaciones from "../../components/CardTransformaciones";
+import CardTransformaciones from "../../components/Card/CardTransformaciones";
+
 
 // Asumo que la API de transformaciones tiene una estructura similar
 const API = 'https://dragonball-api.com/api/transformations?page=1&limit=100';
